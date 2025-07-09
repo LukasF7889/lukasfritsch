@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Lilita One", system-ui;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
