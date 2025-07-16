@@ -46,4 +46,8 @@ p {
   .lf-chips {
     @apply bg-white text-lf-black text-[1rem] md:text-[1.13rem] rounded-full px-[1.56rem] py-1;
   }
+
+  .contact-btn {
+    @apply bg-white rounded-xl px-3 py-1 mx-1 shadow;
+  }
 }
