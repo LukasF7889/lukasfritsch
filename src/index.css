@@ -48,6 +48,6 @@ p {
   }
 
   .contact-btn {
-    @apply bg-white rounded-xl px-3 py-1 mx-1 shadow;
+    @apply bg-white rounded-xl px-3 py-2 mx-1 shadow hover:cursor-pointer hover:translate-y-0.5 hover:bg-lf-green ease-in transition duration-100;
   }
 }
