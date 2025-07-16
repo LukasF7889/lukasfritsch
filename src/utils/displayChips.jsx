@@ -5,12 +5,9 @@ const displayChips = (input) => {
   }
 
   return (
-    <div className="flex gap-1 flex-wrap">
+    <div className="flex gap-2 flex-wrap">
       {input?.map((e, index) => (
-        <div
-          key={index}
-          className="bg-red-500 rounded-full text-black px-3 py-1 my-2 shadow"
-        >
+        <div key={index} className="lf-chips">
           {e}
         </div>
       ))}

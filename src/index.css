@@ -1,9 +1,49 @@
 @import "tailwindcss";
 
+@custom-variant hover (&:hover);
+
 body {
   font-family: "Lilita One", system-ui;
 }
 
 p {
   font-family: "Poppins", sans-serif;
+}
+
+@theme {
+  --color-lf-black: #1e1e1e;
+  --color-lf-green: #7bebc0;
+  --color-lf-pink: #8e73ef;
+  --color-lf-yellow: #fff4b9;
+  --color-lf-orange: #fb9743;
+}
+
+@layer base {
+  h1 {
+    @apply text-[3.25rem] md:text-[5rem];
+  }
+  h2 {
+    @apply text-[1.81rem] md:text-[2.81rem];
+  }
+  h3 {
+    @apply text-[1.25rem] md:text-[2rem];
+  }
+  h4 {
+    @apply text-[1rem] md:text-[1.5rem];
+  }
+  h5 {
+    @apply text-[1rem] md:text-[1.25rem];
+  }
+
+  p {
+    @apply text-[1rem] md:text-[1rem];
+  }
+
+  a {
+    @apply hover:cursor-pointer hover:translate-y-0.5 hover:text-lf-green ease-in transition duration-100;
+  }
+
+  .lf-chips {
+    @apply bg-white text-lf-black text-[1rem] md:text-[1.13rem] rounded-full px-[1.56rem] py-1;
+  }
 }
