@@ -135,7 +135,7 @@ const References = () => {
                 <p>{hl}</p>
               ))}
             </p>
-            <a className="flex gap-2 justify-center md:justify-left">
+            <a className="flex gap-2 justify-center md:justify-start">
               <h5 className="underline text-[1rem]">Open Details</h5> →
             </a>
           </div>
