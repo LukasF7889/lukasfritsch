@@ -8,7 +8,7 @@ const Footer = () => {
     >
       <div className="flex flex-col items-center gap-4">
         <h2 className="text-white">Let's get in contact!</h2>
-        <div className="flex gap-4">
+        <div className="flex flex-wrap justify-center gap-4">
           <a
             className="flex gap-2 contact-btn"
             href="mailto:lukas_fritsch@hotmail.de"
@@ -34,7 +34,7 @@ const Footer = () => {
             LinkedIn
           </a>
         </div>
-        <div className="flex justify-between w-100 text-white mt-6">
+        <div className="flex flex-wrap gap-6 md:justify-between md:w-100 text-white mt-6">
           <a onClick={() => (window.location.href = "#header")}>Back to top</a>
           <a onClick={() => (window.location.href = "#skills")}>Skills</a>
           <a onClick={() => (window.location.href = "#projects")}>Projects</a>

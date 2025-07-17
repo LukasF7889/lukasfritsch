@@ -20,7 +20,7 @@ p {
 
 @layer base {
   h1 {
-    @apply text-[3.25rem] md:text-[5rem];
+    @apply text-[3.25rem]/14 md:text-[5rem]/20;
   }
   h2 {
     @apply text-[1.81rem] md:text-[2.81rem];

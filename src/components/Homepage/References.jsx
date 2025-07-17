@@ -108,10 +108,17 @@ const References = () => {
       {referenceData.map((e) => (
         <div
           key={e.id}
-          className="flex justify-start rounded-md  bg-white/10 backdrop-blur-[3px] w-full mb-6 reference"
+          className="flex flex-col justify-start items-center text-center md:text-left md:items-start md:flex-row rounded-md  bg-white/10 backdrop-blur-[3px] w-full mb-6 reference"
         >
+          <figure className="w-full md:hidden">
+            <img
+              src={e.image}
+              alt={e.title}
+              className="w-full object-cover rounded-t-md"
+            />
+          </figure>
           {e.id % 2 != 0 && (
-            <figure className="w-[30%]">
+            <figure className="w-[30%] hidden md:block">
               <img
                 src={e.image}
                 alt={e.title}
@@ -119,7 +126,7 @@ const References = () => {
               />
             </figure>
           )}
-          <div className="flex flex-col px-12 py-8 w-[70%]">
+          <div className="flex flex-col px-4 py-4 w-[85%] md:px-12 md:py-8 md:w-[70%]">
             <h3>{e.title}</h3>
             <h5>{e.subtitle}</h5>
             <div className="mt-2">{displayChips(e.tags, "lf-chips-small")}</div>
@@ -128,12 +135,12 @@ const References = () => {
                 <p>{hl}</p>
               ))}
             </p>
-            <a className="flex gap-2">
+            <a className="flex gap-2 justify-center md:justify-left">
               <h5 className="underline text-[1rem]">Open Details</h5> →
             </a>
           </div>
           {e.id % 2 === 0 && (
-            <figure className="w-[30%] ml-auto">
+            <figure className="w-[30%] h-full ml-auto hidden md:block">
               <img
                 src={e.image}
                 alt={e.title}
@@ -145,7 +152,7 @@ const References = () => {
       ))}
       <div className="mt-12 mb-20">
         <h3 className="text-center">Find more details</h3>
-        <div className="flex gap-2 mt-4">
+        <div className="flex flex-wrap justify-center gap-2 mt-4">
           <a
             href="https://www.linkedin.com"
             target="_blank"

@@ -4,22 +4,22 @@ import MyJourney from "./MyJourney";
 const AboutMe = () => {
   return (
     <section id="about">
-      <div className="flex flex-col items-center justify-center w-[80vw] bg-white mx-auto shadow-2xl rounded-xl px-20 pt-8 pb-12 ">
+      <div className="flex flex-col items-center justify-center w-[95vw] md:w-[80vw] bg-white mx-auto shadow-2xl rounded-xl px-[5%] md:px-20 pt-8 pb-12 ">
         <h2>About me</h2>
         <h4 className="text-center mb-8">
           Since I was a child I've been passionate about creating...
         </h4>
 
         {/* About Me Text Section */}
-        <section className="flex gap-14 justify-center">
-          <figure className="w-1/3 md:h-80 md:w-80 flex-shrink-0">
+        <section className="flex flex-col md:flex-row gap-14 justify-center">
+          <figure className="md:w-1/3 md:h-80  flex-shrink-0">
             <img
               src={mePic}
               alt="That's me!"
               className="rounded-full w-full h-full object-cover"
             />
           </figure>
-          <article className="flex flex-col gap-2">
+          <article className="flex flex-col gap-2 text-center md:text-left">
             <p>
               ...from making amateur movies, small games or websites for friends
               to developing elaborate digital projects while studying Multimedia
@@ -38,9 +38,9 @@ const AboutMe = () => {
               Seeing ideas come to life excites me, and I’m always looking for
               new challenges and the chance to build something amazing.
             </p>
-            <div>
+            <div className="mt-4">
               Stuff I also love:
-              <div className="flex gap-1 flex-wrap">
+              <div className="flex gap-1 flex-wrap justify-center md:justify-start">
                 <p>🐶 My Dog |</p>
                 <p>🎲 Board Games |</p>
                 <p>📜 Pen & Paper Roleplay Games</p>
