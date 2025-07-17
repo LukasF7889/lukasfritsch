@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://lukasf7889.github.io/lukasfritsch/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
