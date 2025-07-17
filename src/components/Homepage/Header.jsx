@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header
       id="header"
-      className="relative w-[100vw] h-[78vh] overflow-hidden bg-cover bg-center"
+      className="relative h-[78vh] overflow-hidden bg-cover bg-center"
       style={{ backgroundImage: `url(${lfBg})` }}
     >
       <div className="relative w-full h-full overflow-hidden">

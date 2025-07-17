@@ -15,7 +15,6 @@ const MyJourney = () => {
         {/* Dashed line */}
         <div className="absolute left-1/2 top-0 border-l-2 w-1 h-full border-dashed -translate-x-1/2" />
 
-        {/* Stars */}
         {/* Sparkle Stars */}
         <div className="absolute inset-0 z-0 pointer-events-none">
           {[...Array(28)].map((_, i) => (
