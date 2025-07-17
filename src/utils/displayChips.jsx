@@ -1,4 +1,4 @@
-const displayChips = (input) => {
+const displayChips = (input, tagClass) => {
   if (!input || input.length < 1) {
     console.log("Display Chips input not correct");
     return;
@@ -7,7 +7,7 @@ const displayChips = (input) => {
   return (
     <div className="flex gap-2 flex-wrap">
       {input?.map((e, index) => (
-        <div key={index} className="lf-chips">
+        <div key={index} className={tagClass}>
           {e}
         </div>
       ))}

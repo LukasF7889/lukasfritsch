@@ -25,7 +25,7 @@ const TimelineEntry = ({ children }) => {
   return (
     <div
       ref={ref}
-      className="opacity-0 translate-y-8 transition-all duration-700"
+      className="timeline-entry opacity-0 translate-y-8 transition-all duration-700 z-10"
     >
       {children}
     </div>

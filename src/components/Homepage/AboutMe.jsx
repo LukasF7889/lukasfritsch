@@ -1,7 +1,5 @@
-import TimelineEntry from "../TimelineEntry";
-
 import mePic from "../../assets/me.jpg";
-import rocket from "../../assets/rocket.png";
+import MyJourney from "./MyJourney";
 
 const AboutMe = () => {
   return (
@@ -53,56 +51,7 @@ const AboutMe = () => {
         </section>
 
         {/* My Journey Section */}
-        <section>
-          <h4 className="text-center mb-8">My Journey</h4>
-          <div className="relative w-full max-w-3xl mx-auto">
-            {/* Rocket */}
-            <img
-              src={rocket}
-              alt="Rocket"
-              className="sticky left-1/2 top-[50vh] w-20 z-10 -translate-x-1/2"
-              //   style={{ transform: `translate(0%, ${rocketOffset}px)` }}
-            />
-            {/* Dashed line */}
-            <div className="absolute left-1/2 top-0 border-l-2 w-1 h-full border-dashed -translate-x-1/2" />
-
-            {/* Timeline Entries */}
-            <div className="flex flex-col items-center gap-20 ">
-              <TimelineEntry>
-                <div className="bg-white p-4 shadow-md rounded-md max-w-xs transition-all duration-700 translate-y-8 animate-fade-in-on-scroll">
-                  <p className="font-bold">1989</p>
-                  <p>BORN</p>
-                </div>
-              </TimelineEntry>
-
-              <TimelineEntry>
-                <div className="bg-white p-4 shadow-md rounded-md max-w-xs transition-all duration-700 translate-y-8 animate-fade-in-on-scroll">
-                  <p className="font-bold">1989</p>
-                  <p>BA Multimedia Production at Fachhochschule Kiel</p>
-                </div>
-              </TimelineEntry>
-
-              <TimelineEntry>
-                <div className="bg-white p-4 shadow-md rounded-md max-w-xs transition-all duration-700 translate-y-8 animate-fade-in-on-scroll">
-                  <p className="font-bold">2012–2020</p>
-                  <p>Digital Concept Developer at Pop Rocket Labs GmbH</p>
-                </div>
-              </TimelineEntry>
-
-              <TimelineEntry>
-                <div className="bg-white p-4 shadow-md rounded-md max-w-xs transition-all duration-700 translate-y-8 animate-fade-in-on-scroll">
-                  <p className="font-bold">2025</p>
-                  <p>
-                    Fullstack Web & App Development Bootcamp at WBS Coding
-                    School
-                  </p>
-                </div>
-              </TimelineEntry>
-
-              <div className="flex h-[12vh]"></div>
-            </div>
-          </div>
-        </section>
+        <MyJourney />
       </div>
     </section>
   );

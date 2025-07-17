@@ -47,24 +47,70 @@ p {
     @apply bg-white text-lf-black text-[1rem] md:text-[1.13rem] rounded-full px-[1.56rem] py-1;
   }
 
+  .lf-chips-small {
+    @apply bg-white text-lf-black text-[0.85rem] md:text-[0.85rem] rounded-full px-[1.2rem] py-[0.75];
+  }
+
   .contact-btn {
     @apply bg-white rounded-xl px-3 py-2 mx-1 shadow hover:cursor-pointer hover:translate-y-0.5 hover:bg-lf-green ease-in transition duration-100;
   }
+
+  .primary-btn {
+    @apply bg-lf-green rounded-md text-[1rem] text-lf-black px-3 py-2 cursor-pointer hover:text-lf-black hover:bg-white hover:translate-y-0.5 hover:shadow-gray-950  ease-in transition duration-200;
+  }
+}
+
+.reference {
+  @apply cursor-pointer hover:-translate-y-0.5 hover:bg-lf-pink/20 ease-in transition duration-100;
+}
+
+.timeline-entry {
+  @apply flex flex-col items-center text-center bg-lf-yellow/40 backdrop-blur-[5px] p-4 shadow-md rounded-md max-w-xs transition-all duration-700 translate-y-8;
 }
 
 @layer utilities {
   @keyframes fade-in-up {
     0% {
       opacity: 0;
-      transform: translateY(20px);
+      /* transform: translateY(20px); */
     }
     100% {
       opacity: 1;
-      transform: translateY(0);
+      /* transform: translateY(0); */
     }
   }
 
   .animate-fade-in-up {
     animation: fade-in-up 0.8s ease-out forwards;
   }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+}
+
+.animate-twinkle {
+  animation: twinkle 2s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
 }

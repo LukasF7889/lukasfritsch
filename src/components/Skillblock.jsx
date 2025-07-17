@@ -13,7 +13,7 @@ const Skillblock = ({ title, skills, borderColor }) => {
         className={`flex border-3 w-full px-3
         py-5 ${borderColor} rounded-xl`}
       >
-        {displayChips(skills)}
+        {displayChips(skills, "lf-chips")}
       </div>
     </div>
   );
