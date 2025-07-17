@@ -2,32 +2,43 @@ import envelope from "../assets/envelope-icon.png";
 
 const Footer = () => {
   return (
-    <footer className="flex justify-center items-center bg-lf-black py-25">
+    <footer
+      id="contact"
+      className="flex justify-center items-center bg-lf-black py-25"
+    >
       <div className="flex flex-col items-center gap-4">
         <h2 className="text-white">Let's get in contact!</h2>
         <div className="flex gap-4">
-          <button className="flex gap-2 contact-btn">
+          <a
+            className="flex gap-2 contact-btn"
+            href="mailto:lukas_fritsch@hotmail.de"
+            target="_blank"
+          >
             <img
               src={envelope}
               alt="envelope"
               className="h-5 w-auto self-center"
             />
             lukas_fritsch@hotmail.de
-          </button>
-          <button className="flex gap-2 contact-btn">
+          </a>
+          <a
+            className="flex gap-2 contact-btn"
+            href="https://www.linkedin.com/in/fritschlukas/"
+            target="_blank"
+          >
             <img
               src={envelope}
               alt="envelope"
               className="h-5 w-auto self-center"
             />
-            linked.in/asjasjf
-          </button>
+            LinkedIn
+          </a>
         </div>
         <div className="flex justify-between w-100 text-white mt-6">
-          <a>Back to top</a>
-          <a>Skills</a>
-          <a>Projects</a>
-          <a>About Me</a>
+          <a onClick={() => (window.location.href = "#header")}>Back to top</a>
+          <a onClick={() => (window.location.href = "#skills")}>Skills</a>
+          <a onClick={() => (window.location.href = "#projects")}>Projects</a>
+          <a onClick={() => (window.location.href = "#about")}>About Me</a>
         </div>
         <div className="flex  gap-6 text-white text-xs mt-4">
           <a>Imprint</a>

@@ -5,6 +5,7 @@ import lfBgVid from "../../assets/lf-bg-vid.mp4";
 const Header = () => {
   return (
     <header
+      id="header"
       className="relative w-full bg-red-200 h-[78vh] overflow-hidden"
       // style={{ backgroundImage: `url(${lfBg})` }}
     >

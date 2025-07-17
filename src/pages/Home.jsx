@@ -4,6 +4,7 @@ import Skillblock from "../components/Skillblock";
 import Header from "../components/Homepage/Header.jsx";
 import AboutMe from "../components/Homepage/AboutMe.jsx";
 import References from "../components/Homepage/References.jsx";
+import Skills from "../components/Homepage/Skills.jsx";
 
 const Home = () => {
   return (
@@ -13,23 +14,7 @@ const Home = () => {
         <Header />
 
         {/* Skills Section */}
-        <div className="flex flex-col items-center w-full px-2 md:w-[65%] mx-auto text-white">
-          <h2 className="mt-16">My Skills</h2>
-          <h4 className="text-center mb-2">
-            From idea to UX: I know how to craft intuitive, engaging digital
-            products
-          </h4>
-          <Skillblock
-            title={"Fullstack Web Development"}
-            skills={fullstackSkills}
-            borderColor="border-lf-orange"
-          />
-          <Skillblock
-            title={"User Experience Design"}
-            skills={uxSkills}
-            borderColor="border-lf-yellow"
-          />
-        </div>
+        <Skills />
       </div>
       <div className="bg-gradient-to-br from-lf-black via-lf-black to-lf-pink pt-12">
         {/* About Me Section */}

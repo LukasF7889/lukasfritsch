@@ -97,7 +97,10 @@ const References = () => {
   ];
 
   return (
-    <section className="flex flex-col items-center w-full px-2 md:w-[80%] mx-auto text-white mt-12">
+    <section
+      id="projects"
+      className="flex flex-col items-center w-full px-2 md:w-[80%] mx-auto text-white mt-12"
+    >
       <h2>My Projects</h2>
       <h4 className="text-center mb-8">
         An excerpt of current and highlight work I did!
@@ -143,18 +146,27 @@ const References = () => {
       <div className="mt-12 mb-20">
         <h3 className="text-center">Find more details</h3>
         <div className="flex gap-2 mt-4">
-          <button className="primary-btn flex gap-2">
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            className="primary-btn flex gap-2"
+          >
             <img src={icPerson} />
             LinkedIn
-          </button>
-          <button className="primary-btn flex gap-2">
+          </a>
+          <a className="primary-btn flex gap-2">
             <img src={icCV} />
             My CV (PDF)
-          </button>
-          <button className="primary-btn flex gap-2">
+          </a>
+          <a
+            target="_blank"
+            href="/Fritsch-UX-Portfolio-2025.pdf"
+            download
+            className="primary-btn flex gap-2"
+          >
             <img src={icAttraction} />
             UX Showcase (PDF)
-          </button>
+          </a>
         </div>
       </div>
     </section>
