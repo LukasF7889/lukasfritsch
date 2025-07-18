@@ -25,9 +25,9 @@ const ReferenceModal = ({ modalOpen, setModalOpen, selectedProject }) => {
     <>
       {modalOpen && (
         <div
-          className={`fixed flex items-center top-0 left-0 h-full w-full bg-lf-black/90 z-100 overflow-y-auto`}
+          className={`fixed flex items-start top-0 left-0 h-full w-full bg-lf-black/90 z-100 overflow-y-auto`}
         >
-          <div className="flex flex-col items-start  gap-2 bg-white rounded-lg w-[98vw] md:w-[75vw] mx-auto p-12 y-12 mt-60 mb-20">
+          <div className="flex flex-col items-start  gap-2 bg-white rounded-lg w-[98vw] md:w-[75vw] mx-auto p-12 y-12 mt-6 md:mt-12 mb-20">
             <div className="relative w-full flex justify-between text-2xl">
               <div>
                 <h5 className="text-md bg-lf-yellow rounded-full px-3 py-1 flex gap-2 items-center">
