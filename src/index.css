@@ -56,7 +56,7 @@ p {
   }
 
   .primary-btn {
-    @apply bg-lf-green rounded-md text-[1rem] text-lf-black px-3 py-2 cursor-pointer hover:text-lf-black hover:bg-white hover:translate-y-0.5 hover:shadow-gray-950  ease-in transition duration-200;
+    @apply bg-lf-green rounded-md text-[1rem] text-lf-black px-3 py-2 cursor-pointer hover:text-lf-black hover:bg-white hover:shadow-sm hover:translate-y-0.5 hover:shadow-gray-950  ease-in transition duration-200;
   }
 }
 

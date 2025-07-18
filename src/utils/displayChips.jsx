@@ -7,7 +7,7 @@ const displayChips = (input, tagClass) => {
   return (
     <div className="flex gap-2 flex-wrap justify-center md:justify-start">
       {input?.map((e, index) => (
-        <div key={index} className={tagClass}>
+        <div key={index} className={`${tagClass} shadow-lg`}>
           {e}
         </div>
       ))}

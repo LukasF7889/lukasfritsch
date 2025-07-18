@@ -10,7 +10,7 @@ const Footer = () => {
         <h2 className="text-white">Let's get in contact!</h2>
         <div className="flex flex-wrap justify-center gap-4">
           <a
-            className="flex gap-2 contact-btn"
+            className="flex gap-2 contact-btn hover:text-lf-black"
             href="mailto:lukas_fritsch@hotmail.de"
             target="_blank"
           >
@@ -22,7 +22,7 @@ const Footer = () => {
             lukas_fritsch@hotmail.de
           </a>
           <a
-            className="flex gap-2 contact-btn"
+            className="flex gap-2 contact-btn hover:text-lf-black"
             href="https://www.linkedin.com/in/fritschlukas/"
             target="_blank"
           >
