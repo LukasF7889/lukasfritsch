@@ -108,9 +108,9 @@ const References = () => {
       {referenceData.map((e) => (
         <div
           key={e.id}
-          className="flex flex-col justify-start items-center text-center md:text-left md:items-start md:flex-row rounded-md  bg-white/10 backdrop-blur-[3px] w-full mb-6 reference"
+          className="flex flex-col items-stretch justify-start text-center md:text-left md:items-start md:flex-row rounded-md  bg-white/10 backdrop-blur-[3px] w-full mb-6 reference min-h-[250px]"
         >
-          <figure className="w-full md:hidden">
+          <figure className="w-full h-full md:hidden">
             <img
               src={e.image}
               alt={e.title}
@@ -118,11 +118,11 @@ const References = () => {
             />
           </figure>
           {e.id % 2 != 0 && (
-            <figure className="w-[30%] hidden md:block">
+            <figure className="hidden md:flex w-[30%] h-full">
               <img
                 src={e.image}
                 alt={e.title}
-                className="h-full object-cover rounded-l-md"
+                className="w-full h-full object-cover object-center rounded-l-md"
               />
             </figure>
           )}
@@ -130,11 +130,11 @@ const References = () => {
             <h3>{e.title}</h3>
             <h5>{e.subtitle}</h5>
             <div className="mt-2">{displayChips(e.tags, "lf-chips-small")}</div>
-            <p className="mt-2">
-              {e.highlights.map((hl) => (
-                <p>{hl}</p>
+            <div className="mt-2">
+              {e.highlights.map((hl, index) => (
+                <p key={index}>{hl}</p>
               ))}
-            </p>
+            </div>
             <a className="flex gap-2 justify-center md:justify-start">
               <h5 className="underline text-[1rem]">Open Details</h5> →
             </a>

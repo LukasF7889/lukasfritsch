@@ -1,6 +1,3 @@
-import { fullstackSkills, uxSkills } from "../data/skills";
-import Skillblock from "../components/Skillblock";
-
 import Header from "../components/Homepage/Header.jsx";
 import AboutMe from "../components/Homepage/AboutMe.jsx";
 import References from "../components/Homepage/References.jsx";
