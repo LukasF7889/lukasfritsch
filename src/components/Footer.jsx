@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import envelope from "../assets/envelope-icon.png";
 
 const Footer = () => {
@@ -41,8 +42,8 @@ const Footer = () => {
           <a onClick={() => (window.location.href = "#about")}>About Me</a>
         </div>
         <div className="flex  gap-6 text-white text-xs mt-4">
-          <a>Imprint</a>
-          <a>Data Privacy</a>
+          <Link to="/Imprint">Imprint</Link>
+          <Link to="/Privacy">Privacy</Link>
         </div>
       </div>
     </footer>
