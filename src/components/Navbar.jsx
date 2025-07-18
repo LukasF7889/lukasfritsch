@@ -25,7 +25,7 @@ const Navbar = () => {
     <div className="sticky top-0 w-full z-50">
       <div className="absolute flex w-full justify-center md:justify-end md:pr-12 top-0 md:top-6 z-40">
         <div
-          className={`flex gap-4 md:gap-2 w-full md:w-auto md:rounded-full shadow-lg  px-6 py-2 transition-all duration-500 ${
+          className={`flex justify-between flex-wrap gap-2 w-full md:w-auto md:rounded-full shadow-lg  px-10 py-4 md:px-6 md:py-2 transition-all duration-500 ${
             scrolled
               ? "bg-lf-black/80 backdrop-blur-[6px] text-white shadow-lf-pink/30"
               : "bg-lf-black text-white"
