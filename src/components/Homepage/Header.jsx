@@ -1,8 +1,24 @@
+import { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
+
 import lfBg from "../../assets/lf-bg.jpg";
 import lfBgVid from "../../assets/lf-bg-vid.mp4";
 
 const Header = () => {
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      const isDesktop = window.innerWidth >= 768 ? true : false;
+      setIsDesktop(isDesktop);
+    };
+
+    checkScreenSize(); // run on first mount
+    window.addEventListener("resize", checkScreenSize); //run on resize
+
+    return () => window.removeEventListener("resize", checkScreenSize); //clear on unmount
+  }, []);
+
   return (
     <header
       id="header"
@@ -11,17 +27,19 @@ const Header = () => {
     >
       <div className="relative w-full h-full overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-white/10 backdrop-blur-[3px] z-10"></div>
-        <ReactPlayer
-          src={lfBgVid}
-          playing={true}
-          muted={true}
-          loop={true}
-          controls={false}
-          // style={{ width: "100vw", height: "auto", aspectRatio: "16/9" }}
-          width="100%"
-          height="100%"
-          className="absolute top-0 left-0 object-cover"
-        />
+        {isDesktop && (
+          <ReactPlayer
+            src={lfBgVid}
+            playing={true}
+            muted={true}
+            loop={true}
+            controls={false}
+            // style={{ width: "100vw", height: "auto", aspectRatio: "16/9" }}
+            width="100%"
+            height="100%"
+            className="top-0 left-0 object-cover hidden md:block"
+          />
+        )}
       </div>
 
       <div className="absolute top-0 left-0 w-full h-[75vh] flex flex-col gap-2 justify-center items-center z-20">
