@@ -30,12 +30,12 @@ const References = ({ modalOpen, setModalOpen, setSelectedProject }) => {
       {referenceData.map((e) => (
         <div
           key={e.id}
-          className="flex flex-col md:flex-row items-stretch w-full mb-6 rounded-md bg-white/10 backdrop-blur-[3px] md:h-[280px]"
+          className="flex flex-col md:flex-row items-stretch w-full mb-6 rounded-md bg-white/10 backdrop-blur-[3px] md:h-[280px] cursor-pointer hover:bg-lf-pink/50 hover:translate-y-1 transition-all duration-300"
         >
           {/* Image for mobile */}
           <figure className="w-full h-full md:hidden flex-shrink-0">
             <img
-              src={e.image}
+              src={Array.isArray(e.image) ? e.image[0] : e.image}
               alt={e.title}
               className="w-full object-cover rounded-t-md flex-shrink-0"
             />
@@ -45,7 +45,7 @@ const References = ({ modalOpen, setModalOpen, setSelectedProject }) => {
           {e.id % 2 != 0 && (
             <figure className="hidden md:flex w-[30%] h-full flex-shrink-0">
               <img
-                src={e.image}
+                src={Array.isArray(e.image) ? e.image[0] : e.image}
                 alt={e.title}
                 className="h-full w-full object-cover rounded-l-md"
               />
@@ -72,7 +72,7 @@ const References = ({ modalOpen, setModalOpen, setSelectedProject }) => {
           {e.id % 2 === 0 && (
             <figure className="w-[30%] h-full ml-auto hidden md:block">
               <img
-                src={e.image}
+                src={Array.isArray(e.image) ? e.image[0] : e.image}
                 alt={e.title}
                 className="h-full w-full object-cover rounded-r-md"
               />

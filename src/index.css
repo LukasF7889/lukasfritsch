@@ -69,6 +69,16 @@ p {
 }
 
 @layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
   @keyframes fade-in-up {
     0% {
       opacity: 0;

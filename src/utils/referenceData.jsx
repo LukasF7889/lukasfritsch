@@ -27,7 +27,7 @@ export const referenceData = [
       "Wireframing",
       "Webdesign",
     ],
-    image: refPlothook,
+    image: [refPlothook, refPlothook, refPlothook, refPlothook, refPlothook],
     link: "https://plothook.onrender.com/",
     cta: "Open project website",
   },

@@ -2,6 +2,7 @@ import displayChips from "../utils/displayChips";
 import { useEffect } from "react";
 
 import me from "../assets/me-cartoon.png";
+import ImageSlider from "./ImageSlider";
 
 const ReferenceModal = ({ modalOpen, setModalOpen, selectedProject }) => {
   const proj = selectedProject;
@@ -46,11 +47,7 @@ const ReferenceModal = ({ modalOpen, setModalOpen, selectedProject }) => {
                 X
               </button>
             </div>
-            <img
-              src={proj.image}
-              alt={`${proj.title} teaser`}
-              className="rounded-md"
-            />
+            <ImageSlider img={proj.image} />
             <h3>{proj.title}</h3>
             <h5>{proj.subtitle}</h5>
             <div className="mt-2">
