@@ -10,7 +10,7 @@ const References = ({ modalOpen, setModalOpen, setSelectedProject }) => {
   return (
     <section
       id="projects"
-      className="flex flex-col items-center w-full px-2 md:w-[80%] mx-auto text-white mt-12"
+      className="flex flex-col items-center w-full px-2 md:w-[90%] lg:w-[80%] mx-auto text-white mt-12"
     >
       <h2>My Projects</h2>
       <h4 className="text-center mb-2">
@@ -30,7 +30,10 @@ const References = ({ modalOpen, setModalOpen, setSelectedProject }) => {
       {referenceData.map((e) => (
         <div
           key={e.id}
-          className="flex flex-col md:flex-row items-stretch w-full mb-6 rounded-md bg-white/10 backdrop-blur-[3px] md:h-[280px] cursor-pointer hover:bg-lf-pink/50 hover:translate-y-1 transition-all duration-300"
+          onClick={() => {
+            setSelectedProject(e), setModalOpen(true);
+          }}
+          className="flex flex-col md:flex-row items-center md:items-stretch w-full mb-6 rounded-md bg-white/10 backdrop-blur-[3px] md:h-[320px] lg:h-[280px] max-w-[1200px] cursor-pointer hover:bg-lf-pink/50 hover:translate-y-1 transition-all duration-300"
         >
           {/* Image for mobile */}
           <figure className="w-full h-full md:hidden flex-shrink-0">
@@ -51,7 +54,7 @@ const References = ({ modalOpen, setModalOpen, setSelectedProject }) => {
               />
             </figure>
           )}
-          <div className="flex flex-col px-4 py-4 w-[85%] md:px-12 md:py-8 md:w-[70%]">
+          <div className="flex flex-col px-4 py-4 w-[95%] gap-1 text-center md:text-left md:px-12 md:py-8 md:w-[70%]">
             <h3>{e.title}</h3>
             <h5>{e.subtitle}</h5>
             <div className="mt-2">{displayChips(e.tags, "lf-chips-small")}</div>
