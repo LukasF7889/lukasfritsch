@@ -1,5 +1,7 @@
 import { Link } from "react-router";
 import envelope from "../assets/envelope-icon.png";
+import person from "../assets/ic-person.svg";
+import me from "../assets/me-cartoon.png";
 
 const Footer = () => {
   return (
@@ -27,11 +29,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/fritschlukas/"
             target="_blank"
           >
-            <img
-              src={envelope}
-              alt="envelope"
-              className="h-5 w-auto self-center"
-            />
+            <img src={person} alt="person" className="h-5 w-auto self-center" />
             LinkedIn
           </a>
         </div>

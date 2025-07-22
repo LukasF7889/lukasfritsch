@@ -49,7 +49,7 @@ const References = () => {
                 />
               </figure>
             )}
-            <div className="flex flex-col px-4 md:py-4 gap-1 text-center md:text-left md:px-12 md:w-[70%]">
+            <div className="flex flex-col px-4 py-4 md:py-4 gap-1 text-center md:text-left md:px-12 md:w-[70%]">
               <h3>{e.title}</h3>
               <h5>{e.subtitle}</h5>
               <div className="mt-2">

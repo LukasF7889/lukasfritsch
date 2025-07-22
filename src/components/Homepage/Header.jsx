@@ -4,6 +4,7 @@ import ReactPlayer from "react-player";
 import lfBg from "../../assets/lf-bg.jpg";
 import lfBgVid from "../../assets/lf-bg-vid.mp4";
 import envelope from "../../assets/envelope-icon.png";
+import person from "../../assets/ic-person.svg";
 
 const Header = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -78,8 +79,8 @@ const Header = () => {
               target="_blank"
             >
               <img
-                src={envelope}
-                alt="envelope"
+                src={person}
+                alt="person"
                 className="h-5 w-auto self-center"
               />
               LinkedIn

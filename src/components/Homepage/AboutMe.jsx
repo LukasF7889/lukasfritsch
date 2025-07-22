@@ -4,7 +4,7 @@ import MyJourney from "./MyJourney";
 const AboutMe = () => {
   return (
     <section id="about">
-      <div className="flex flex-col items-center justify-center bg-white mx-auto shadow-2xl rounded-xl px-[5%] md:px-20 pt-8 pb-12 ">
+      <div className="flex flex-col items-center justify-center bg-white mx-auto shadow-2xl rounded-xl px-[8%] md:px-20 pt-8 pb-12 ">
         <h2>About me</h2>
         <h4 className="text-center mb-8">
           Since I was a child I've been passionate about creating...
@@ -12,11 +12,11 @@ const AboutMe = () => {
 
         {/* About Me Text Section */}
         <section className="flex flex-col md:flex-row gap-14 justify-center">
-          <figure className="md:w-1/3 md:h-80  flex-shrink-0">
+          <figure className="aspect-square w-60 md:w-80 flex-shrink-0 self-center">
             <img
               src={mePic}
               alt="That's me!"
-              className="rounded-full w-full h-full object-cover"
+              className="rounded-full w-full object-cover"
             />
           </figure>
           <article className="flex flex-col gap-2 text-center md:text-left">
