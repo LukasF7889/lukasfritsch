@@ -34,7 +34,7 @@ const ImageSlider = ({ img }) => {
         className="flex gap-2 overflow-x-scroll no-scrollbar"
       >
         {img.map((e, index) => (
-          <img key={index} src={e} />
+          <img key={index} src={e} className="h-[250px] w-auto" />
         ))}
       </div>
     </div>

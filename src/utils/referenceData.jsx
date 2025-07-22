@@ -4,6 +4,29 @@ import refUx from "../assets/ref-ux.png";
 import refTapestories from "../assets/ref-tapestories.png";
 import refWebdev from "../assets/re-webdev.png";
 
+import refPlothook1 from "../assets/plothook1.png";
+import refPlothook2 from "../assets/plothook2.png";
+import refPlothook3 from "../assets/plothook3.png";
+import refPlothook4 from "../assets/plothook4.png";
+import refPlothook5 from "../assets/plothook5.png";
+import RefElphi1 from "../assets/Elphi1.png";
+import RefElphi2 from "../assets/Elphi2.png";
+import RefElphi3 from "../assets/Elphi3.png";
+import RefElphi4 from "../assets/Elphi4.png";
+import RefElphi5 from "../assets/Elphi5.png";
+import RefWebDev1 from "../assets/webDevStudies1.png";
+import RefWebDev2 from "../assets/webDevStudies2.png";
+import RefWebDev3 from "../assets/webDevStudies3.png";
+import RefWebDev4 from "../assets/webDevStudies4.png";
+import RefWebDev5 from "../assets/webDevStudies5.png";
+import RefUX1 from "../assets/UX1.png";
+import RefUX2 from "../assets/UX2.png";
+import RefUX3 from "../assets/UX3.png";
+import RefUX4 from "../assets/UX4.png";
+import RefUX5 from "../assets/UX5.png";
+import RefTapestories1 from "../assets/Tapestories1.png";
+import RefTapestories2 from "../assets/Tapestories2.png";
+
 export const referenceData = [
   {
     id: 1,
@@ -27,7 +50,13 @@ export const referenceData = [
       "Wireframing",
       "Webdesign",
     ],
-    image: [refPlothook, refPlothook, refPlothook, refPlothook, refPlothook],
+    image: [
+      refPlothook1,
+      refPlothook2,
+      refPlothook3,
+      refPlothook4,
+      refPlothook5,
+    ],
     link: "https://plothook.onrender.com/",
     cta: "Open project website",
   },
@@ -51,7 +80,7 @@ export const referenceData = [
       "Wireframing",
       "Webdesign",
     ],
-    image: refWebdev,
+    image: [RefWebDev1, RefWebDev2, RefWebDev3, RefWebDev4, RefWebDev5],
     link: "https://github.com/stars/LukasF7889/lists/reference-projects",
     cta: "To Github",
   },
@@ -74,7 +103,7 @@ export const referenceData = [
       "Narrative Design",
       "Prototyping",
     ],
-    image: refUx,
+    image: [RefUX1, RefUX2, RefUX3, RefUX4, RefUX5],
     link: "/Fritsch-UX-Portfolio-2025.pdf",
     cta: "Open UX Showcase (PDF)",
   },
@@ -90,7 +119,7 @@ export const referenceData = [
       "The main idea was to make a game which everyone would be able to play and finish but still delivering a feeling of challenge and interesting puzzles. While playing, users should experience the Elbphilharmonie backstage and see how a show comes together. It was so much fun to work on!",
     achievement: "What was achieved",
     tags: ["Game Design", "Gamification", "UX Design", "Wireframing"],
-    image: refElphi,
+    image: [RefElphi1, RefElphi2, RefElphi3, RefElphi4, RefElphi5],
     link: "https://www.elbphilharmonie.de/de/mediathek/digitales-escape-game/780",
     cta: "Play here!",
   },
@@ -106,7 +135,7 @@ export const referenceData = [
     approach: "",
     achievement: "What was achieved",
     tags: ["Game Design", "UX Design", "Gamification", "Wireframing"],
-    image: refTapestories,
+    image: [RefTapestories1, RefTapestories2],
     link: "https://www.peta.de/neuigkeiten/tapestories/",
     cta: "Open project",
   },
