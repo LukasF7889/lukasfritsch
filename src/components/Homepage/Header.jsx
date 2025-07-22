@@ -3,6 +3,7 @@ import ReactPlayer from "react-player";
 
 import lfBg from "../../assets/lf-bg.jpg";
 import lfBgVid from "../../assets/lf-bg-vid.mp4";
+import envelope from "../../assets/envelope-icon.png";
 
 const Header = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -57,6 +58,32 @@ const Header = () => {
             <div className="lf-chips !bg-lf-yellow/80 backdrop-blur-[6px]">
               Gamification Enthusiast
             </div>
+          </div>
+          <div className="flex flex-wrap justify-center gap-4 mt-[8vh]">
+            <a
+              className="flex gap-2 primary-btn hover:text-lf-black"
+              href="mailto:lukas_fritsch@hotmail.de"
+              target="_blank"
+            >
+              <img
+                src={envelope}
+                alt="envelope"
+                className="h-5 w-auto self-center"
+              />
+              lukas_fritsch@hotmail.de
+            </a>
+            <a
+              className="flex gap-2 primary-btn hover:text-lf-black"
+              href="https://www.linkedin.com/in/fritschlukas/"
+              target="_blank"
+            >
+              <img
+                src={envelope}
+                alt="envelope"
+                className="h-5 w-auto self-center"
+              />
+              LinkedIn
+            </a>
           </div>
         </div>
       </div>

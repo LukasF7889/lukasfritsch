@@ -4,7 +4,7 @@ import MyJourney from "./MyJourney";
 const AboutMe = () => {
   return (
     <section id="about">
-      <div className="flex flex-col items-center justify-center w-[95vw] md:w-[80vw] bg-white mx-auto shadow-2xl rounded-xl px-[5%] md:px-20 pt-8 pb-12 ">
+      <div className="flex flex-col items-center justify-center bg-white mx-auto shadow-2xl rounded-xl px-[5%] md:px-20 pt-8 pb-12 ">
         <h2>About me</h2>
         <h4 className="text-center mb-8">
           Since I was a child I've been passionate about creating...

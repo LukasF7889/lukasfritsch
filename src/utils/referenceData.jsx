@@ -59,6 +59,7 @@ export const referenceData = [
     ],
     link: "https://plothook.onrender.com/",
     cta: "Open project website",
+    color: "bg-[#02080D]",
   },
   {
     id: 2,
@@ -83,6 +84,7 @@ export const referenceData = [
     image: [RefWebDev1, RefWebDev2, RefWebDev3, RefWebDev4, RefWebDev5],
     link: "https://github.com/stars/LukasF7889/lists/reference-projects",
     cta: "To Github",
+    color: "bg-[#471897]",
   },
 
   {
@@ -106,6 +108,7 @@ export const referenceData = [
     image: [RefUX1, RefUX2, RefUX3, RefUX4, RefUX5],
     link: "/Fritsch-UX-Portfolio-2025.pdf",
     cta: "Open UX Showcase (PDF)",
+    color: "bg-[#002266]",
   },
   {
     id: 4,
@@ -122,6 +125,7 @@ export const referenceData = [
     image: [RefElphi1, RefElphi2, RefElphi3, RefElphi4, RefElphi5],
     link: "https://www.elbphilharmonie.de/de/mediathek/digitales-escape-game/780",
     cta: "Play here!",
+    color: "bg-[#FFFFFF]",
   },
   {
     id: 5,
@@ -138,5 +142,6 @@ export const referenceData = [
     image: [RefTapestories1, RefTapestories2],
     link: "https://www.peta.de/neuigkeiten/tapestories/",
     cta: "Open project",
+    color: "bg-[#18385A]",
   },
 ];

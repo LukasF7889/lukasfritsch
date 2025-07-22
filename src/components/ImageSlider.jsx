@@ -23,10 +23,16 @@ const ImageSlider = ({ img }) => {
     // Container
     <div className="relative w-full">
       {/* Scroll Buttons on Desktop */}
-      <button onClick={() => scroll("left")} className="slider-btn left-0">
+      <button
+        onClick={() => scroll("left")}
+        className="slider-btn left-0 -translate-x-1.5"
+      >
         ←
       </button>
-      <button onClick={() => scroll("right")} className="slider-btn right-0">
+      <button
+        onClick={() => scroll("right")}
+        className="slider-btn right-0 translate-x-1.5"
+      >
         →
       </button>
       <div

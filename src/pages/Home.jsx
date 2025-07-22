@@ -16,24 +16,28 @@ const Home = () => {
         setModalOpen={setModalOpen}
         selectedProject={selectedProject}
       />
-      <div className="bg-lf-black">
+      <section className="bg-lf-black">
         {/* Header Section */}
         <Header />
 
         {/* Skills Section */}
-        <Skills />
-      </div>
-      <div className="bg-gradient-to-br from-lf-black via-lf-black to-lf-pink pt-12">
-        {/* About Me Section */}
-        <AboutMe />
+        <div className="w-[95%] md:w-[80%] max-w-[1028px] mx-auto">
+          <Skills />
+        </div>
+      </section>
 
-        {/* References Section */}
-        <References
-          modalOpen={modalOpen}
-          setModalOpen={setModalOpen}
-          setSelectedProject={setSelectedProject}
-        />
-      </div>
+      <section className="bg-gradient-to-br from-lf-black via-lf-black to-lf-pink pt-12">
+        <div className="w-[95%] md:w-[80%] max-w-[1028px] mx-auto">
+          {/* About Me Section */}
+          <AboutMe />
+          {/* References Section */}
+          <References
+            modalOpen={modalOpen}
+            setModalOpen={setModalOpen}
+            setSelectedProject={setSelectedProject}
+          />
+        </div>
+      </section>
     </>
   );
 };
