@@ -16,7 +16,7 @@ const Footer = () => {
           className="w-[75px] h-auto md:w-[35%]"
         />
         <h2 className="text-white">Let's get in contact!</h2>
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap justify-center  gap-1 md:gap-4">
           <a
             className="flex gap-2 contact-btn hover:text-lf-black"
             href="mailto:lukas_fritsch@hotmail.de"
@@ -27,10 +27,10 @@ const Footer = () => {
               alt="envelope"
               className="h-5 w-auto self-center"
             />
-            lukas_fritsch@hotmail.de
+            Mail
           </a>
           <a
-            className="flex gap-2 contact-btn hover:text-lf-black"
+            className="flex md:gap-2 contact-btn hover:text-lf-black"
             href="https://www.linkedin.com/in/fritschlukas/"
             target="_blank"
           >
@@ -38,6 +38,7 @@ const Footer = () => {
             LinkedIn
           </a>
         </div>
+
         <div className="flex flex-wrap gap-6 md:justify-between md:w-100 text-white mt-6">
           <a onClick={() => (window.location.href = "#header")}>Back to top</a>
           <a onClick={() => (window.location.href = "#skills")}>Skills</a>
