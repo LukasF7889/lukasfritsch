@@ -10,6 +10,11 @@ const Footer = () => {
       className="flex justify-center items-center bg-lf-black py-25"
     >
       <div className="flex flex-col items-center gap-4">
+        <img
+          src={me}
+          alt="me as a cartoon"
+          className="w-[75px] h-auto md:w-[35%]"
+        />
         <h2 className="text-white">Let's get in contact!</h2>
         <div className="flex flex-wrap justify-center gap-4">
           <a
