@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { useEffect } from "react";
 
 const ImageSlider = ({ img }) => {
   const scrollContainer = useRef();
@@ -39,8 +40,9 @@ const ImageSlider = ({ img }) => {
         ref={scrollContainer}
         className="flex gap-2 overflow-x-scroll no-scrollbar"
       >
+        <div className="h-full w-[10vw] bg-white"></div>
         {img.map((e, index) => (
-          <img key={index} src={e} className="h-[250px] w-auto" />
+          <img key={index} src={e} className="h-[250px] w-auto rounded-md" />
         ))}
       </div>
     </div>
