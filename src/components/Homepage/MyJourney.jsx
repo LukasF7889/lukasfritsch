@@ -62,7 +62,7 @@ const MyJourney = () => {
           </TimelineEntry>
 
           <TimelineEntry>
-            <p className="font-bold">2012–2020</p>
+            <p className="font-bold">2018–2024</p>
             <h5>Digital Concept Developer</h5>
             <p>At Pop Rocket Labs</p>
           </TimelineEntry>
