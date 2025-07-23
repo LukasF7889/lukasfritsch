@@ -45,7 +45,7 @@ const Header = () => {
       </div>
 
       <div className="absolute top-0 left-0 w-full h-[75vh] flex flex-col gap-2 justify-center items-center z-20">
-        <div className="flex flex-col gap-2 max-w-[75%]">
+        <div className="flex flex-col gap-2 max-w-[75%] mt-6 md:mt-0">
           <h1 className="rounded-full bg-white/80 backdrop-blur-[6px] shadow-2xl py-0 md:px-16 tracking-widest text-center">
             Lukas Fritsch
           </h1>
@@ -71,7 +71,7 @@ const Header = () => {
                 alt="envelope"
                 className="h-5 w-auto self-center"
               />
-              lukas_fritsch@hotmail.de
+              MAIL
             </a>
             <a
               className="flex gap-2 primary-btn hover:text-lf-black"
@@ -83,7 +83,7 @@ const Header = () => {
                 alt="person"
                 className="h-5 w-auto self-center"
               />
-              LinkedIn
+              LINKEDIN
             </a>
           </div>
         </div>
